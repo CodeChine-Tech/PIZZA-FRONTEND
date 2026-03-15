@@ -9,6 +9,7 @@
     "start:admin": "cd artifacts/pizzon-admin && npx vite --config vite.config.ts --host 0.0.0.0 --port 5174",
     "dev:admin": "cd artifacts/pizzon-admin && npx vite --config vite.config.ts --host 0.0.0.0 --port 5174",
     "build": "pnpm run typecheck && pnpm --filter @workspace/pizzon run build",
+    "build:admin": "pnpm --filter @workspace/pizzon-admin run build",
     "typecheck": "pnpm --filter @workspace/pizzon run typecheck"
   },
   "private": true,
