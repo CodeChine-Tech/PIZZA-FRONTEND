@@ -51,14 +51,15 @@ Build output: `artifacts/pizzon/dist/public/` (static files to deploy anywhere).
 
 ## Deploy on Vercel
 
-The repo is set up for Vercel. `vercel.json` defines build and output. In Vercel:
-
 1. Import the project from **GitHub** → `CodeChine-Tech/PIZZA-FRONTEND`.
-2. Use **root** as the project directory (leave default).
-3. Build and output are read from `vercel.json` (pnpm install, pnpm run build, output `artifacts/pizzon/dist/public`).
-4. Deploy.
+2. Leave **Root Directory** as default (repo root).
+3. If the build fails with “No Output Directory named public”, go to **Settings → General → Build & Development** and set **Output Directory** to:
+   ```
+   artifacts/pizzon/dist/public
+   ```
+4. Deploy. `vercel.json` sets install/build commands; the output path is above.
 
-No extra env vars needed for the static site.
+No env vars needed for the static site.
 
 ## License
 
