@@ -66,4 +66,4 @@ MIT
 
 ---
 
-**Developed by Faqir Ullah – Codechine**
+**Developed by Faqir Ullah – CodeChine**
